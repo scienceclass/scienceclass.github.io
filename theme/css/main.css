@@ -709,7 +709,7 @@ text-align: center;
       src: url('http://scienceclass.github.io/theme/fonts/linlibertine_rb-webfont.eot');
       src: url('http://scienceclass.github.io/theme/fonts/linlibertine_rb-webfont.eot?#iefix') format('embedded-opentype'),
            url('http://scienceclass.github.io/theme/fonts/linlibertine_rb-webfont.woff') format('woff'),
-           url('http://scienceclass.github.io/theme/fonts/linlibertine_rb-webfont.ttf') fscienceclassormat('truetype');
+           url('http://scienceclass.github.io/theme/fonts/linlibertine_rb-webfont.ttf') format('truetype');
       font-weight: 700;
       font-style: normal;
 
