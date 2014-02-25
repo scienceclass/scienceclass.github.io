@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="MobileOptimized" content="320">
         <meta name="HandheldFriendly" content="True">
-        <title>Disclaimer — The Free & Open Science Class</title>
+        <title>Contact — The Free & Open Science Class</title>
         <link rel="stylesheet" href="../theme/css/main.css" />
         <link rel="shortcut icon" href="../images/favicon.png" /> 
         <link rel="apple-touch-icon" href="../images//apple-touch-icon.png" />
@@ -32,18 +32,128 @@
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
-    <h1 class="entry-title">Disclaimer</h1>
+    <h1 class="entry-title">Contact</h1>
     
-    <div style="background-color: #eee;padding:20px;font-family: Courier, consolas, mono;font-size: .7em;">
+    <style>
+form{
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-<p>Science Class is not responsible for, and expressly disclaims all liability for, damages of any kind arising out of use, reference to, or reliance on any information contained within the site. While the information contained within the site is periodically updated, no guarantee is given that the information provided in this Web site is correct, complete, and up-to-date.</p>
+input, textarea{
+    border: 1px solid #ddd;
+    font-family: serif;
+    padding:7px !important;
+    font-size: 1em;
+}
 
-<p>Although the Science Class Web site may include links providing direct access to other websites, Science Class is not responsible for the accuracy or content of information contained in these sites.</p>
+input:focus, textarea:focus{
+    border: 1px solid orange;
+}
 
-<p>Links from Science Class to third-party sites do not constitute an endorsement by Science Class of the parties or their products and services. The appearance on the Web site of advertisements and product or service information does not constitute an endorsement by Science Class, and Science Class has not investigated the claims made by any advertiser. Product information is based solely on material received from suppliers.</p>
+form fieldset {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    /*border-bottom: 1px dashed #eee;*/
+}
 
-<p>Some of the projects described on this site may not work, may be inconsistent with current laws or user agreements, or may damage or adversely affect some equipment. Your safety is your responsibility, including proper use of equipment and safety gear, and determining whether you have adequate skills and experience. The tools, electricity, and other resources used for these projects are dangerous unless used properly, and with proper precautions and safety gear. Some photos do not depict safety precautions or equipment in order to show the project steps more clearly. These projects are not intended for use by unsupervised children. Use of the instructions and suggestions on Science Class is at your own risk. Science Class disclaims responsibility for any resulting damage, injury, or expense. It is your responsibility to ensure that your activities comply with applicable laws.</p>
-</div>
+form fieldset.form-actions {
+    margin: 0 0 0 40%;
+    padding: 0;
+    border: none;
+}
+
+form fieldset label {
+    float: left;
+    width: 30%;
+    margin: 4px 0 5px 0;
+    /*font-weight: bold;*/
+    -moz-font-feature-settings:"smcp" 1; 
+    -moz-font-feature-settings:"smcp=1"; 
+    -ms-font-feature-settings:"smcp" 1; 
+    -o-font-feature-settings:"smcp" 1; 
+    -webkit-font-feature-settings:"smcp" 1; 
+    font-feature-settings:"smcp" 1;
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+
+form fieldset input.form-text,
+form fieldset textarea {
+    display: block;
+    width: 70%;
+}
+
+form fieldset textarea {
+    height: 150px;
+}
+
+form fieldset p.form-help {
+    margin: 5px 0 0 20%;
+    font-size: 12px;
+    color: #999;
+}
+form input[type="submit"] {
+    margin: 0;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: #eee;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: bold;
+    border-radius: 2px;
+}
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+    border: 1px solid #bbb;
+    background: #e5e5e5;
+}
+form input[type="submit"]:active {
+    borde r: 1px solid #ccc;
+    background: #eee;
+}
+
+@media screen and (max-width: 960px) {
+    form fieldset label {
+        display: block;
+        float: none;
+        width: auto;
+        margin: 0 0 5px 0;
+        }
+    form fieldset.form-actions,
+    form fieldset p.form-help {
+        margin-left: 0;
+        padding-left: 0;
+        }
+    form fieldset input.form-text,
+    form fieldset textarea {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+    }               
+</style>
+
+<p>Say “Hello”, send a plea for help, wax eloquent on Science Class’s grammatical errors, or find another way to make life interesting for the folks running it.</p>
+<form class="contactform" action="//api.formspree.com/info@automathic.org" method="POST">
+    <fieldset>
+        <label for="input-name">Your Name</label>
+        <input class="form-text" id="input-name" type="text" name="name" placeholder="Joe Smith" required>
+    </fieldset>
+    <fieldset>
+        <label for="input-email">Your Email</label>
+        <input class="form-text" id="input-email" type="email" name="_replyto" placeholder="email@example.com">
+    </fieldset>
+    <input type="hidden" name="_next" value="//scienceclass.github.io/pages/thanks.html">
+    <fieldset>
+        <label for="input-message">Your Message</label>
+        <textarea id="input-message" name="message" placeholder="I ❤ Science Class" required></textarea>
+    </fieldset>
+    <fieldset class="form-actions">
+        <input type="submit" value="SEND &raquo;">
+    </fieldset>
+</form>
 </section>
         <section id="extras" class="body">
         <!--                 <div class="social">
