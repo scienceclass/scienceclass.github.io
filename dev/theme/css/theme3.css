@@ -41,7 +41,7 @@ code, pre{
 
 .menu__item a{
   font-family: Playfair Display SC;
-  border-top: 2px dotted #eee;
+  border-top: 2px dotted #ddd;
   border-bottom: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -54,7 +54,7 @@ code, pre{
 }
 
 .menu__list:last-child{
-  border-bottom: 2px dotted #eee;
+  border-bottom: 2px dotted #ddd;
 }
 
 /*.social*/ a[href*='github.com'],
@@ -179,7 +179,7 @@ code, pre{
     text-align: center;
     height:50px;
     line-height: 2em;
-    border-bottom: 2px dotted #eee;
+    border-bottom: 2px dotted #ddd;
     z-index: 1;
     background-color: #fdfdfd;
 
