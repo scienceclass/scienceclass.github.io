@@ -329,7 +329,7 @@ code, pre{
     background: #e5e5e5;
   }
   form input[type="submit"]:active {
-    borde r: 1px solid #ccc;
+    border: 1px solid #ccc;
     background: #eee;
   }
 }
